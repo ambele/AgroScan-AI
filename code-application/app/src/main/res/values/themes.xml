@@ -1,0 +1,9 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Thème de base Material 3 sans ActionBar -->
+    <style name="Theme.AgroScanApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- On laisse Compose gérer les couleurs de l'UI.
+             On configure ici uniquement les éléments système de base. -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+</resources>

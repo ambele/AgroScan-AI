@@ -1,0 +1,499 @@
+{
+    "Apple___Apple_scab": {
+        "nom_fr": "Tavelure du pommier",
+        "description": "Maladie cryptogamique majeure causée par le champignon Venturia inaequalis, affectant principalement les feuilles et les fruits.",
+        "symptomes": [
+            "Taches brunes veloutées sur les feuilles",
+            "Déformation et crevasses sur les fruits",
+            "Chute prématurée des feuilles"
+        ],
+        "recommendations": [
+            "Ramasser et brûler les feuilles mortes à l'automne",
+            "Pulvériser un fongicide adapté (ex: bouillie bordelaise) au débourrement",
+            "Élaguer pour aérer la canopée."
+        ]
+    },
+    "Apple___Black_rot": {
+        "nom_fr": "Pourriture noire du pommier",
+        "description": "Maladie fongique causée par Botryosphaeria obtusa, provoquant des chancres sur le bois et la pourriture des fruits.",
+        "symptomes": [
+            "Taches foliaires en œil de grenouille",
+            "Pourriture concentrique noire sur le fruit",
+            "Chancres sur les branches"
+        ],
+        "recommendations": [
+            "Éliminer les fruits momifiés restés sur l'arbre",
+            "Tailler et détruire les bois morts ou chancrés",
+            "Appliquer un traitement fongicide après la floraison."
+        ]
+    },
+    "Apple___Cedar_apple_rust": {
+        "nom_fr": "Rouille du genévrier de Virginie",
+        "description": "Maladie fongique à cycle complexe nécessitant deux hôtes (le pommier et le genévrier) pour compléter son développement.",
+        "symptomes": [
+            "Taches orange vif sur la face supérieure des feuilles",
+            "Structures en forme de tubes sous les feuilles",
+            "Lésions sur les fruits"
+        ],
+        "recommendations": [
+            "Éviter de planter des genévriers à proximité des vergers",
+            "Retirer les galles sur les genévriers environnants",
+            "Utiliser des variétés résistantes ou des fongicides préventifs."
+        ]
+    },
+    "Apple___healthy": {
+        "nom_fr": "Pommier Sain",
+        "description": "Le feuillage et les fruits ne présentent aucun signe visible de maladie ou de carence nutritionnelle.",
+        "symptomes": [
+            "Feuilles vertes et vigoureuses",
+            "Fruits lisses sans taches"
+        ],
+        "recommendations": [
+            "Maintenir une irrigation régulière",
+            "Appliquer un fertilisant équilibré au printemps",
+            "Inspecter régulièrement."
+        ]
+    },
+    "Blueberry___healthy": {
+        "nom_fr": "Myrtillier Sain",
+        "description": "Plante saine en pleine croissance.",
+        "symptomes": [
+            "Feuillage dense et vert",
+            "Absence de flétrissement"
+        ],
+        "recommendations": [
+            "Maintenir un sol acide (pH 4.5-5.2)",
+            "Pailler le sol pour conserver l'humidité."
+        ]
+    },
+    "Cherry_(including_sour)___Powdery_mildew": {
+        "nom_fr": "Oïdium du cerisier",
+        "description": "Maladie fongique (Podosphaera clandestina) fréquente par temps chaud et humide, limitant la photosynthèse.",
+        "symptomes": [
+            "Feutrage blanc poudreux sur les feuilles",
+            "Enroulement des feuilles vers le haut",
+            "Distorsion des jeunes pousses"
+        ],
+        "recommendations": [
+            "Supprimer les pousses infectées",
+            "Appliquer un traitement à base de soufre ou de bicarbonate de potassium",
+            "Arroser au pied sans mouiller le feuillage."
+        ]
+    },
+    "Cherry_(including_sour)___healthy": {
+        "nom_fr": "Cerisier Sain",
+        "description": "Arbre sain ne présentant aucun signe d'infection fongique ou bactérienne.",
+        "symptomes": [
+            "Feuilles bien déployées et vertes",
+            "Écorce saine"
+        ],
+        "recommendations": [
+            "Effectuer une taille d'éclaircie en hiver",
+            "Surveiller l'apparition des pucerons."
+        ]
+    },
+    "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "nom_fr": "Cercosporiose du maïs",
+        "description": "Maladie foliaire grave causée par Cercospora zeae-maydis, favorisée par une humidité prolongée.",
+        "symptomes": [
+            "Lésions rectangulaires grises à brunes",
+            "Nécrose parallèle aux nervures",
+            "Dessèchement prématuré des feuilles"
+        ],
+        "recommendations": [
+            "Pratiquer la rotation des cultures",
+            "Enfouir les résidus de récolte par le labour",
+            "Choisir des hybrides tolérants."
+        ]
+    },
+    "Corn_(maize)___Common_rust_": {
+        "nom_fr": "Rouille commune du maïs",
+        "description": "Infection fongique due à Puccinia sorghi, se propageant rapidement par le vent lors des étés frais et humides.",
+        "symptomes": [
+            "Pustules brun-cannelle sur les deux faces de la feuille",
+            "Déchirure de l'épiderme foliaire",
+            "Jaunissement des zones infectées"
+        ],
+        "recommendations": [
+            "Utiliser des variétés résistantes",
+            "Détruire les repousses de maïs",
+            "Assurer une fertilisation azotée équilibrée."
+        ]
+    },
+    "Corn_(maize)___Northern_Leaf_Blight": {
+        "nom_fr": "Helminthosporiose du maïs",
+        "description": "Maladie causée par Exserohilum turcicum, capable d'engendrer de lourdes pertes de rendement sur le grain.",
+        "symptomes": [
+            "Longues lésions en forme de cigare (gris-vert à vannerie)",
+            "Nécrose extensive du feuillage",
+            "Apparence brûlée de la plante"
+        ],
+        "recommendations": [
+            "Rotation des cultures de minimum 2 ans",
+            "Labour profond pour détruire les spores du sol",
+            "Application de fongicides en cas de forte pression avant la floraison."
+        ]
+    },
+    "Corn_(maize)___healthy": {
+        "nom_fr": "Maïs Sain",
+        "description": "Culture vigoureuse sans stress pathogène.",
+        "symptomes": [
+            "Tiges robustes",
+            "Feuilles d'un vert franc et uniforme"
+        ],
+        "recommendations": [
+            "Veiller à un bon espacement au semis",
+            "Gérer les adventices de manière précoce."
+        ]
+    },
+    "Grape___Black_rot": {
+        "nom_fr": "Pourriture noire de la vigne",
+        "description": "Attaque fongique redoutable (Guignardia bidwellii) pouvant détruire la quasi-totalité des grappes.",
+        "symptomes": [
+            "Petites taches brunes sur feuilles",
+            "Dessèchement et momification des baies en grains noirs ridés"
+        ],
+        "recommendations": [
+            "Supprimer impérativement tous les résidus et grappes momifiées",
+            "Traiter préventivement dès le début du débourrement."
+        ]
+    },
+    "Grape___Esca_(Black_Measles)": {
+        "nom_fr": "Esca de la vigne",
+        "description": "Maladie de la mort du bois causée par un complexe de champignons lignivores saprophytes.",
+        "symptomes": [
+            "Feuilles tigrées (décolorations jaunes/rouges entre les nervures)",
+            "Dessèchement brutal d'un bras de la vigne (apoplexie)"
+        ],
+        "recommendations": [
+            "Désinfecter les outils de taille entre chaque cep",
+            "Recéper ou arracher les ceps morts",
+            "Protéger les plaies de taille avec un mastic."
+        ]
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "nom_fr": "Isariopsiose de la vigne",
+        "description": "Infection foliaire tardive causée par Isariopsis clavispora, touchant souvent les vignes affaiblies.",
+        "symptomes": [
+            "Taches foliaires brunes asymétriques",
+            "Dessèchement des bordures de la feuille",
+            "Chute précoce des feuilles en fin de saison"
+        ],
+        "recommendations": [
+            "Ramasser les feuilles au sol en hiver",
+            "Maintenir la vigueur de la vigne via une fertilisation adaptée."
+        ]
+    },
+    "Grape___healthy": {
+        "nom_fr": "Vigne Saine",
+        "description": "Feuillage sain et grappes en bon développement.",
+        "symptomes": [
+            "Feuilles vertes sans taches",
+            "Rameaux vigoureux"
+        ],
+        "recommendations": [
+            "Pratiquer l'effeuillage pour maximiser l'ensoleillement",
+            "Inspecter régulièrement le dessous des feuilles."
+        ]
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+        "nom_fr": "Huanglongbing (Verdissement des agrumes)",
+        "description": "Maladie bactérienne incurable et destructrice transmise par le psylle des agrumes.",
+        "symptomes": [
+            "Marbrure jaune asymétrique des feuilles",
+            "Fruits petits, déformés et restant verts à la base",
+            "Mort précoce de l'arbre"
+        ],
+        "recommendations": [
+            "Arracher et brûler immédiatement les arbres infectés",
+            "Contrôler rigoureusement les populations de psylles",
+            "Utiliser des plants certifiés sains."
+        ]
+    },
+    "Peach___Bacterial_spot": {
+        "nom_fr": "Tache bactérienne du pêcher",
+        "description": "Infection due à Xanthomonas arboricola, affectant les feuilles, les fruits et les rameaux.",
+        "symptomes": [
+            "Petites taches angulaires sombres",
+            "Effet 'criblé' (les taches se détachent et laissent des trous)",
+            "Crevasses sur les pêches"
+        ],
+        "recommendations": [
+            "Éviter les excès d'azote",
+            "Appliquer des traitements préventifs à base de cuivre à la chute des feuilles."
+        ]
+    },
+    "Peach___healthy": {
+        "nom_fr": "Pêcher Sain",
+        "description": "Arbre sain exempt de symptômes pathogènes.",
+        "symptomes": [
+            "Feuilles longues, lisses et vertes",
+            "Écorce saine"
+        ],
+        "recommendations": [
+            "Tailler en fin d'hiver pour favoriser la lumière",
+            "Éclaircir les fruits en surnombre."
+        ]
+    },
+    "Pepper,_bell___Bacterial_spot": {
+        "nom_fr": "Gale bactérienne du poivron",
+        "description": "Maladie bactérienne causée par Xanthomonas, favorisée par les éclaboussures de pluie et la chaleur.",
+        "symptomes": [
+            "Petites taches circulaires gorgées d'eau sous les feuilles",
+            "Lésions surélevées et rugueuses sur les poivrons"
+        ],
+        "recommendations": [
+            "Pratiquer la rotation des cultures",
+            "Ne jamais travailler dans la parcelle quand le feuillage est mouillé",
+            "Utiliser des semences traitées."
+        ]
+    },
+    "Pepper,_bell___healthy": {
+        "nom_fr": "Poivron Sain",
+        "description": "Plant de poivron vigoureux et productif.",
+        "symptomes": [
+            "Tiges dressées",
+            "Feuilles bien vertes",
+            "Fruits fermes"
+        ],
+        "recommendations": [
+            "Pailler le pied pour réguler l'humidité",
+            "Tuteurer si la charge en fruits est lourde."
+        ]
+    },
+    "Potato___Early_blight": {
+        "nom_fr": "Alternariose de la pomme de terre",
+        "description": "Maladie fongique causée par Alternaria solani, ciblant d'abord les feuilles les plus anciennes.",
+        "symptomes": [
+            "Taches brunes avec des anneaux concentriques (effet cible)",
+            "Jaunissement autour des taches"
+        ],
+        "recommendations": [
+            "Assurer une bonne rotation des cultures",
+            "Éliminer les débris végétaux après récolte",
+            "Fertiliser correctement pour éviter le stress de la plante."
+        ]
+    },
+    "Potato___Late_blight": {
+        "nom_fr": "Mildiou de la pomme de terre",
+        "description": "Fléau redoutable causé par l'oomycète Phytophthora infestans, capable de ravager une parcelle en quelques jours.",
+        "symptomes": [
+            "Taches d'aspect brûlé, brun-noir sur les feuilles",
+            "Duvet blanc sur la face inférieure par temps humide",
+            "Pourriture brune des tubercules"
+        ],
+        "recommendations": [
+            "Planter des lignes espacées face aux vents dominants",
+            "Butter largement pour protéger les tubercules",
+            "Appliquer un fongicide préventif dès l'annonce de périodes humides."
+        ]
+    },
+    "Potato___healthy": {
+        "nom_fr": "Pomme de terre Saine",
+        "description": "Feuillage sain garantissant une bonne tubérisation.",
+        "symptomes": [
+            "Feuillage vert et dense",
+            "Absence de flétrissement"
+        ],
+        "recommendations": [
+            "Surveiller la présence des doryphores",
+            "Irriguer au pied sans mouiller les feuilles."
+        ]
+    },
+    "Raspberry___healthy": {
+        "nom_fr": "Framboisier Sain",
+        "description": "Framboisier vigoureux et productif.",
+        "symptomes": [
+            "Cannes solides",
+            "Feuilles saines sans décoloration"
+        ],
+        "recommendations": [
+            "Tailler les cannes sèches après la fructification",
+            "Éviter les sols détrempés."
+        ]
+    },
+    "Soybean___healthy": {
+        "nom_fr": "Soja Sain",
+        "description": "Culture saine et homogène.",
+        "symptomes": [
+            "Feuilles trifoliées bien vertes",
+            "Nodules racidaires actifs"
+        ],
+        "recommendations": [
+            "Maintenir un désherbage propre",
+            "Inspecter les gousses en formation."
+        ]
+    },
+    "Squash___Powdery_mildew": {
+        "nom_fr": "Oïdium de la courge",
+        "description": "Feutrage blanc d'origine fongique apparaissant souvent en milieu et fin d'été.",
+        "symptomes": [
+            "Feutrage blanc poudreux recouvrant les feuilles",
+            "Dessèchement et mort des feuilles atteintes"
+        ],
+        "recommendations": [
+            "Supprimer les premières feuilles touchées",
+            "Pulvériser du lait dilué (10%) ou du soufre",
+            "Espacer les plants à la plantation."
+        ]
+    },
+    "Strawberry___Leaf_scorch": {
+        "nom_fr": "Tache pourpre du fraisier",
+        "description": "Maladie fongique commune induite par Diplocarpon earlianum, affaiblissant les plants.",
+        "symptomes": [
+            "Multiples taches violacées devenant brunes au centre",
+            "Séchage complet et aspect roussi de la feuille"
+        ],
+        "recommendations": [
+            "Renouveler les fraisiers tous les 3 ans",
+            "Nettoyer les vieilles feuilles en fin d'hiver",
+            "Éviter les arrosages tardifs le soir."
+        ]
+    },
+    "Strawberry___healthy": {
+        "nom_fr": "Fraisier Sain",
+        "description": "Stolons et pieds sains.",
+        "symptomes": [
+            "Feuilles d'un vert brillant",
+            "Fleurs bien formées"
+        ],
+        "recommendations": [
+            "Pailler le sol pour éviter le contact direct des fraises avec la terre",
+            "Appliquer un compost mûr."
+        ]
+    },
+    "Tomato___Bacterial_spot": {
+        "nom_fr": "Gale bactérienne de la tomate",
+        "description": "Attaque bactérienne provoquant des nécrotisations et réduisant grandement la valeur des fruits.",
+        "symptomes": [
+            "Petites taches noires cernées de jaune",
+            "Gales liégeuses et surélevées sur les tomates"
+        ],
+        "recommendations": [
+            "Éliminer les plants fortement atteints",
+            "Pulvériser une solution à base de cuivre",
+            "Pratiquer une rotation stricte."
+        ]
+    },
+    "Tomato___Early_blight": {
+        "nom_fr": "Alternariose de la tomate",
+        "description": "Maladie fongique courante touchant d'abord le bas du plant avant de monter.",
+        "symptomes": [
+            "Taches foliaires circulaires avec des cercles concentriques",
+            "Chute des feuilles basses",
+            "Chancres noirs au collet"
+        ],
+        "recommendations": [
+            "Tailler les feuilles du bas touchant le sol",
+            "Pailler généreusement le pied",
+            "Traiter en préventif avec une décoction de prêle."
+        ]
+    },
+    "Tomato___Late_blight": {
+        "nom_fr": "Mildiou de la tomate",
+        "description": "La maladie la plus destructrice pour la tomate en extérieur, causée par Phytophthora infestans.",
+        "symptomes": [
+            "Grandes taches brunes d'aspect huileux",
+            "Flétrissement rapide des tiges",
+            "Taches marbrées d'un brun chocolat sur les fruits"
+        ],
+        "recommendations": [
+            "Abriter les tomates de la pluie si possible",
+            "Ne jamais mouiller le feuillage lors de l'arrosage",
+            "Appliquer de la bouillie bordelaise après les pluies d'été."
+        ]
+    },
+    "Tomato___Leaf_Mold": {
+        "nom_fr": "Cladosporiose de la tomate",
+        "description": "Maladie fongique typique des cultures sous serre où l'air stagne et l'humidité est confinée.",
+        "symptomes": [
+            "Taches jaunes diffuses sur la face supérieure",
+            "Feutrage velouté olive à violet sous la feuille"
+        ],
+        "recommendations": [
+            "Ventiler au maximum les serres",
+            "Espacer les plants",
+            "Supprimer les feuilles malades."
+        ]
+    },
+    "Tomato___Septoria_leaf_spot": {
+        "nom_fr": "Septoriose de la tomate",
+        "description": "Infection fongique foliaire sévère provoquant une défoliation rapide si les conditions sont humides.",
+        "symptomes": [
+            "Nombreuses petites taches grises à bordure sombre",
+            "Présence de minuscules points noirs au centre des taches"
+        ],
+        "recommendations": [
+            "Ramasser tous les débris de culture",
+            "Arrosage au goutte-à-goutte uniquement",
+            "Paillage du sol."
+        ]
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "nom_fr": "Attaque de tétranyques (araignées rouges)",
+        "description": "Pullulation de minuscules acariens piqueurs-suceurs par temps chaud et très sec.",
+        "symptomes": [
+            "Fines toiles d'araignée autour des sommités",
+            "Feuilles piquetées de petits points blancs/jaunes",
+            "Plante prenant un aspect terne"
+        ],
+        "recommendations": [
+            "Augmenter l'humidité ambiante en douchant le feuillage (le soir)",
+            "Introduire des prédateurs naturels (Phytoseiulus)",
+            "Utiliser du purin d'ortie."
+        ]
+    },
+    "Tomato___Target_Spot": {
+        "nom_fr": "Corynesporiose de la tomate",
+        "description": "Maladie causée par Corynespora cassiicola, créant des lésions caractéristiques sur les feuilles et fruits.",
+        "symptomes": [
+            "Taches brunes circulaires ressemblant à des cibles",
+            "Lésions s'enfonçant légèrement dans le fruit"
+        ],
+        "recommendations": [
+            "Améliorer la circulation de l'air",
+            "Détruire les résidus de récolte",
+            "Application d'un fongicide si l'infection progresse."
+        ]
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "nom_fr": "Virus des feuilles jaunes en cuillère (TYLCV)",
+        "description": "Virus redoutable transmis par l'aleurode (mouche blanche), bloquant complètement la croissance.",
+        "symptomes": [
+            "Feuilles sévèrement réduites et enroulées en forme de cuillère",
+            "Jaunissement des bordures foliaires",
+            "Arrêt de la fructification"
+        ],
+        "recommendations": [
+            "Lutter activement contre les mouches blanches (panneaux englués jaunes)",
+            "Arracher immédiatement les plants atteints",
+            "Utiliser des filets anti-insectes en serre."
+        ]
+    },
+    "Tomato___Tomato_mosaic_virus": {
+        "nom_fr": "Virus de la mosaïque de la tomate (ToMV)",
+        "description": "Maladie virale très contagieuse se transmettant par simple contact mécanique ou par des semences infectées.",
+        "symptomes": [
+            "Marbrures vert clair/vert foncé sur le limbe",
+            "Feuilles déformées ou filiformes en 'bouts de ficelle'"
+        ],
+        "recommendations": [
+            "Se laver soigneusement les mains et désinfecter les outils avant de manipuler les plantes",
+            "Arracher les sujets virosés",
+            "Acheter des semences certifiées indexées."
+        ]
+    },
+    "Tomato___healthy": {
+        "nom_fr": "Tomate Saine",
+        "description": "Plant de tomate en excellente santé.",
+        "symptomes": [
+            "Tiges épaisses et vigoureuses",
+            "Feuillage bien vert",
+            "Fructification normale"
+        ],
+        "recommendations": [
+            "Maintenir un arrosage régulier pour éviter le cul noir (nécrose apicale)",
+            "Ajouter du purin de consoude pour favoriser les fruits."
+        ]
+    }
+}

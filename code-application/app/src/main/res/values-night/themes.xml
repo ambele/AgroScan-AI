@@ -1,0 +1,8 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme pour le mode nuit (Material 3). -->
+    <style name="Theme.AgroScanApp" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- On laisse Compose gérer les couleurs de l'UI -->
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

@@ -1,0 +1,173 @@
+# ============================================================
+# AgroScan-AI — Production & Mobile Ready (v1.2 FULL)
+# ============================================================
+
+project:
+  name: "AgroScan-AI"
+  description: "MobileNetV3 2-phase training + domain adaptation + TFLite deployment"
+  seed: 42
+  deterministic: true
+  task: "plant_disease_classification"
+
+# ============================================================
+# DATASETS
+# ============================================================
+
+dataset:
+  num_classes: 38
+  align_classes: true
+  strict_label_mapping: true
+  ignore_unknown_classes: true
+
+  classes:
+    strategy: "from_file"
+    file: "./data/class_names.txt"
+    sort_alphabetical: false
+
+  sources:
+    plantvillage:
+      weight: 0.60
+      path: "/content/data/PlantVillage_Clean"
+    plantdoc:
+      weight: 0.25
+      path: "/content/data/PlantDoc_Filtered_38"
+    plant_pathology:
+      weight: 0.15
+      path: "/content/data/PlantPathology2021_Filtered_38"
+
+  splits:
+    train: 0.75
+    val: 0.15
+    test: 0.10
+
+# ============================================================
+# PREPROCESSING
+# ============================================================
+
+image:
+  input_size: [224, 224]
+  channels: 3
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+
+# ============================================================
+# MODEL
+# ============================================================
+
+model:
+  backbone: "mobilenet_v3_large"
+  pretrained: true
+  classifier_hidden_dims: [512, 256]
+  dropout: 0.35
+
+# ============================================================
+# TRAINING
+# ============================================================
+
+training:
+  epochs_total: 42
+  num_workers: 2
+  mixed_precision: true
+  gradient_clip_val: 1.0
+
+  optimizer:
+    type: "adamw"
+    weight_decay: 0.01
+
+  loss:
+    type: "CrossEntropy"
+    label_smoothing: 0.1
+    class_weights: true
+
+# ============================================================
+# CHECKPOINTING
+# ============================================================
+
+checkpointing:
+  enabled: true
+  save_dir: "/content/checkpoints"
+  save_best_only: true
+  save_last: true
+  monitor: "val_f1"
+  mode: "max"
+  filename: "best_model.pth"
+  save_frequency: 1
+  keep_top_k: 3
+
+# ============================================================
+# PHASE 1
+# ============================================================
+
+phase_1:
+  description: "PlantVillage pretraining (clean domain)"
+  dataset_weights: {plantvillage: 1.0}
+  epochs: 7
+  batch_size: 32
+  learning_rate: 0.0002
+  freeze_backbone: false
+  scheduler:
+    type: "OneCycleLR"
+  augmentations:
+    random_horizontal_flip: true
+    random_rotation_degrees: 15
+
+# ============================================================
+# PHASE 2
+# ============================================================
+
+phase_2:
+  description: "Domain adaptation (real-world shift)"
+  dataset_weights:
+    plantvillage: 0.60
+    plantdoc: 0.25
+    plant_pathology: 0.15
+  epochs: 35
+  batch_size: 24
+  learning_rate: 0.00001
+  freeze_backbone: {enabled: false}
+  scheduler:
+    type: "OneCycleLR" # 🔥 Optimisé pour le fine-tuning
+  augmentations:
+    geometric:
+      horizontal_flip: true
+      rotation: 20
+      random_crop_scale: [0.75, 1.0]
+    color:
+      color_jitter: {brightness: 0.35, contrast: 0.25, saturation: 0.25, hue: 0.05}
+    noise_realism:
+      random_erasing_prob: 0.20
+      gaussian_blur_prob: 0.15
+      motion_blur_prob: 0.10
+      defocus_prob: 0.10
+      image_compression_prob: 0.20
+
+# ============================================================
+# EARLY STOPPING & LOGGING
+# ============================================================
+
+early_stopping:
+  enabled: true
+  patience: 12
+  min_delta: 0.001
+  monitor: "val_f1"
+  mode: "max"
+
+logging:
+  use_wandb: true
+  use_tensorboard: true
+  log_interval: 10
+  tensorboard:
+    log_dir: "/content/tensorboard"
+
+# ============================================================
+# ADVANCED
+# ============================================================
+
+advanced:
+  gradient_clipping: 1.0
+  progressive_resizing:
+    enabled: true
+    schedule:
+      - {size: 224, batch_size: 32, epochs: 10}
+      - {size: 288, batch_size: 24, epochs: 10}
+      - {size: 320, batch_size: 16, epochs: 10}
